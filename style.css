@@ -12,13 +12,17 @@
 .header-bg{
     background-color: #1A0B2E;
     border-bottom: 1px solid #412567;
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
 }
 .nav{
     width: 100%;
-    max-width: 1600px;
+    max-width: 1200px;
     padding:30px 200px;
     align-items: center;
     margin: 0 auto;
+    gap: 314px;
 }
 .btn{
       width: 140px;
@@ -120,6 +124,53 @@ hr{
     color: white;
     line-height: 30px;
     opacity: 80%;
+}
+
+#choose{
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+    background-color: #230E3D;
+    padding: 120px 200px;
+    text-align: center;
+}
+#choose .choose-card{
+     background-color: #351165;
+     border-radius: 40px;
+     text-align: left;
+     display: flex;
+     align-items: center;
+     padding: 40px;
+}
+.choose-card h2{
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 16px 0;
+}
+.choose-card p {
+    color: white;
+    opacity: 60%;
+}
+.choose-card-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 40px;
+}
+.c1{
+    grid-row: span 2;
+
+}
+.c2{
+    grid-column: span 2;
+}
+.c3{
+    grid-column: span 2;
+}
+.c4{
+    grid-column: span 2;
 }
 
 
