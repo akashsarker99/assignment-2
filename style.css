@@ -17,23 +17,28 @@
     margin: 0 auto;
 }
 .nav{
-    width: 100%;
-    max-width: 1200px;
-    padding:30px 200px;
-    align-items: center;
-    margin: 0 auto;
-    gap: 314px;
+  padding: 20px;
+  gap: 0;
+  justify-content: space-around;
 }
 .btn{
       width: 140px;
     padding: 12.5px 16px;
     border-radius: 36px;
+    transition: .5s ease-in-out;
+}
+.btn:hover{
+   transform:scale(1.15);
 }
 .btn1{
     width: 201px;
     padding: 12.5px 20px;
     border-radius: 36px;
     margin-right: 8px;
+    transition: .5s ease-in-out;
+}
+.btn1:hover{
+    transform: scale(1.1);
 }
 .btn2{
     width: 150px;
@@ -43,6 +48,10 @@
     border-radius: 36px;
     color: #00ff88;
     font-weight: 500;
+     transition: .5s ease-in-out;
+}
+.btn2:hover{
+     transform: scale(1.1);
 }
 #banner{
     width: 100%;
@@ -67,6 +76,10 @@
     justify-content: center;
     align-items: center;
     position: relative;
+   transition: .5s ease-in-out;
+}
+.banner-img:hover{
+    transform: scale(1.2);
 }
 .banner-img .mic{
     position: absolute;
@@ -82,7 +95,11 @@
     position: absolute;
     right: 23px;
     bottom: 300px;
-
+    transition: .5s ease-in-out;
+}
+.banner-img .new:hover{
+      transform: translate(20px);
+    
 }
 .banner-content{
     text-align: center;
@@ -118,8 +135,9 @@ hr{
     opacity: 20%;
 }
 .about-card{
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-items: center;
     gap: 80px;
 }
 .about-card .card{
@@ -299,4 +317,80 @@ footer{
     color: white;
     opacity: 60%;
 
+}
+
+
+.hamburger{
+  display: none;
+  width: 28px;
+  cursor: pointer;
+}
+@media screen and (max-width: 576px) {
+      .header-bg{
+
+      }
+      .nav{
+          justify-content: space-around;
+      }
+      .navbar{
+        display: none;
+      }
+      .hamburger{
+    display: block;
+  }
+   #banner {
+    width: 100%;
+    padding: 40px 20px;
+    text-align: center;
+  }
+      .banner-container{
+        padding: 40px;
+        background-repeat: none;
+        margin: 0 auto;
+      }
+      .banner-img{
+    width: 250px;
+    height: 250px;
+    margin: 0 auto 34px;
+  }
+  .banner-img .mic{
+    height: 100px;
+  }
+   .banner-img img {
+    max-width: 100%;
+  }
+    .banner-img .new {
+    right: 0;
+    bottom: 200px;
+    font-size: 16px;
+  }
+   #about {
+    padding: 40px 20px;
+  }
+  .about-content {
+    width: 100%;
+    text-align: center;
+  }
+  .about-content p{
+    line-height: 18px;
+  }
+   .about-card {
+       grid-template-columns: repeat(2, 1fr);
+       justify-items: center;
+     column-gap: 10px;
+     margin: 0 auto;
+  }
+  .about-card .card {
+    width: 100%;
+  }
+  #choose {
+    padding: 40px 20px;
+  }
+   .choose-card-container {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .choose-card {
+    padding: 24px;
+  }
 }
