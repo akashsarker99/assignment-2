@@ -95,6 +95,31 @@
     opacity: 80%;
 }
 
-
+hr{
+    margin: 80px auto;
+    color: white;
+    opacity: 20%;
+}
+.about-card{
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+}
+.about-card .card{
+    width: 240px;
+    text-align: center;
+    align-items: center;
+}
+.card h1{
+    font-size: 48px;
+    color: #00ff88;
+    font-weight: 800;
+}
+.card p{
+      margin-top: 16px;
+    color: white;
+    line-height: 30px;
+    opacity: 80%;
+}
 
 
