@@ -233,6 +233,7 @@ hr{
 .feature-card-content h4{
     color: #00ff88;
     margin-top: 12px;
+    margin-bottom: 0 24px;
 }
 .feature-card .media{
     position: relative;
@@ -325,9 +326,12 @@ footer{
   width: 28px;
   cursor: pointer;
 }
+
+/* responsive query */
+
 @media screen and (max-width: 576px) {
       .header-bg{
-
+        width: 100%;
       }
       .nav{
           justify-content: space-around;
@@ -339,19 +343,23 @@ footer{
     display: block;
   }
    #banner {
-    width: 100%;
+    background-position: center;
+    background-size: cover;
+      background-repeat: none;
     padding: 40px 20px;
     text-align: center;
   }
       .banner-container{
         padding: 40px;
-        background-repeat: none;
         margin: 0 auto;
       }
       .banner-img{
     width: 250px;
     height: 250px;
     margin: 0 auto 34px;
+  }
+  .btn1{
+    margin-bottom: 20px;
   }
   .banner-img .mic{
     height: 100px;
@@ -391,6 +399,43 @@ footer{
     gap: 20px;
   }
   .choose-card {
-    padding: 24px;
+    width: 100%;
   }
+  #feature{
+    padding: 40px 0;
+  }
+  .feature-container{
+    flex-direction: column;
+    align-items: center;
+    padding: 0 20px;
+  }
+  .feature-card{
+    width: 100%;
+  }
+  .host{
+    margin: 40px 20px;
+
+  }
+  .host-container{
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
+  .host-text{
+    text-align: center;
+  }
+  .host-social{
+    justify-content: center;
+  }
+  footer{
+    width: 100%;
+     padding: 40px 20px;
+    text-align: center;
+  }
+ 
+  .footer-links {
+     flex-wrap: wrap;
+     justify-content: center;
+}
+
 }
